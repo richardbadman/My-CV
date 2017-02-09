@@ -1,0 +1,181 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (14/7/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com) and Harsh Gadgil
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+% Command for printing skill progress bars
+\iffalse
+\newcommand\skills{ 
+~
+	\smartdiagram[bubble diagram]{
+        \textbf{Full Stack}\\\textbf{Dev},
+        \textbf{Relational/}\\\textbf{Document}\\\textbf{Databases},
+        \textbf{~~~~OOP~~~~~},
+        \textbf{Mobile}\\\textbf{Dev},
+        \textbf{Machine}\\\textbf{Learning},
+        \textbf{Test}\\\textbf{~~Automation~~},
+        \textbf{Statistical}\\\textbf{Analysis}
+    }
+}
+\fi
+\newcommand\skills{
+~
+	\smartdiagram[bubble diagram]{
+		\textbf{Versatile}\\\textbf{Graduate},
+		\textbf{Database}\\\textbf{Design},
+		\textbf{Mobile}\\\textbf{Dev},
+		\textbf{UI/UX}\\\textbf{Design},
+		\textbf{~~~~OOP~~~~~},
+		\textbf{Back end}\\\textbf{Technician},
+		\textbf{\LaTeX}\\\textbf{Enthusiast}
+	}
+}
+
+\interests{{Dev Ops/4.5},{Test Automation/5},{Data Science/6},{Software Engineering/6}}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+
+
+\cvname{Richard Goodman} % Your name
+\cvjobtitle{ Computer Science with Placement \\ Graduate} % Job title/career
+%www.linkedin.com/in/richard-goodman
+\cvlinkedin{https://linkedin.com/in/richard-goodman}
+\cvnumberphone{07484616353} % Phone number
+\cvsite{http://www.onegoodman.co.uk} % Personal website
+\cvmail{richardagoodman@icloud.com} % Email address
+\cvref{References available upon request}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem
+    	{2013 - \\Present}
+       	{BSc., Computer Science with Placement}
+      	{\href{https://www.brighton.ac.uk/index.aspx}{University of Brighton}}
+       	%{Guelph, Ontario, Canada}
+       	{Expected 1:1}
+		{A wide spread degree teaching various languages and paradigms in the IT industry, some key modules are:
+       		{\vspace{2mm}
+       			\begin{itemize}
+       			\setlength\itemsep{.5mm}
+			        \item Mobile application development
+			        \item Object orientated programming
+					 \item Client side server computing
+					 \item Data Management
+					 \item Logic \& Formal Specification
+			    \end{itemize}
+			}
+        }
+	\twentyitem
+    	{\\2010 - 2012}
+        {A-Levels \& BTEC}
+        {\href{http://www.southdowns.ac.uk/}{South Downs College}}
+        {}
+        {Music, Graphics Communication \& Photography}
+    \twentyitem
+    	{\\2005-2010}
+    	{GCSEs}
+    	{\href{https://www.fareham-academy.hants.sch.uk/}{Neville Lovett Community School}}
+    	{}
+    	{8 A-C including English (C), Maths (A), Science (C) \& ICT (B)}
+	%\twentyitem{<dates>}{<title>}{<organization>}{<location>}{<description>}
+\end{twenty}
+
+\vspace{-1mm}
+\section{Dissertation}
+\vspace{-5mm}
+\begin{twenty}
+	\twentyitem
+		{}
+		{}
+		{}
+		{}
+		{
+			My Dissertation project is creating an iOS application making it easier for users to find recipes that cater for several people's dietary requirements \textit{(if applicable}). The user creates profiles of friends/family, listing any dietary requirements they might have. Using this they select the people they would be cooking for, and it filters recipes where their ingredients are compatible.
+			\vspace{2mm}
+			\\
+			This is made using Swift 3.0, for the back-end a MySQL is used with an API connecting the two, this was created using the Laravel PhP framework.
+		}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\vspace{-1mm}
+\section{Experience}
+\vspace{-1mm}
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem
+    	{Nov 2016 - \\Present}
+        {Student Assistant}
+        {\href{https://www.brighton.ac.uk/index.aspx}{University of Brighton}}
+        {}
+        {
+        {\begin{itemize}
+        \item Attending first year lab sessions assisting the present lecture with any queries the students have and offering guidance for coursework.
+        \item Explaining programming problems with solutions and the method of approach.
+    \end{itemize}}
+        }
+        
+    \twentyitem
+   		{Jun 2015 - \\ Sept 2016}
+        {Database Technician}
+        {\href{http://www.clarksons.com/services/research/}{Clarksons Research Services}}
+        {}
+        {
+        {\begin{itemize}
+        \item Using programs such as Microsft SQL, being responsible for monthly database data transfer.
+        \item Maintaining datasets in the offshore database for analysts and clients.
+        \item Designing a new database structure as well as a front end layout for a new renewables sector of the company. Following this required a big data cleanse of a large pool of data that was previously stored and the creation of derived fields to make datasets feature intelligent information.
+    \end{itemize}}
+        }
+        
+     \twentyitem
+   		{Nov 2013 - \\ May 2015}
+        {Team Leader}
+        {\href{http://www.cathkidston.com/}{Cath Kidston}}
+        {}
+        {
+        \begin{itemize}
+        \item Responsible for till training new staff members.
+        \item Filling in stock reports and processing store returns and exchanges.
+    \end{itemize}
+    	}
+        
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+\end{document} 
