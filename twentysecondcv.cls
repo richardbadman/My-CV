@@ -212,37 +212,34 @@
               {\href{mailto:\cvmail}{\includegraphics[scale=0.05]{img/email.png}}}
               \end{array}
               $} 
-            & \href{mailto:\cvmail}{\cvmail} \\
+            & \href{mailto:\cvmail}{\cvmail}
             }
-      \ifthenelse{\equal{\cvref}{}}{}{
-      		{$
-      			\begin{array}{l}
-	      		\includegraphics[scale=0.1]{img/tel.png}
-    	  		\end{array}
-      		$}
-      		& \cvref
-      	}
     \end{tabular}
+    
+	\hfill	
+	\textbf{\textit{\cvref}}
+	\hfill	
 
     %------------------------------------------------
         \vspace{3mm}
         \profilesection{Skills}{4cm}
 
-    	\skills
+    	\hspace{2mm}\skills
         
-        %------------------------------------------------
-        \vspace{3mm}
-        \profilesection{Interests}{3cm} 
-        
-        \interests
-        
+        %------------------------------------------------        
         \vspace{3mm}
         \profilesection{Languages}{2.4cm} 
         {$
               \begin{array}{l}
-              \hspace{-2mm}{\includegraphics[scale=0.45]{img/languages_new.png}}
+              {\includegraphics[scale=0.45]{img/languages_new.png}}
               \end{array}
         $}   
+        
+        %------------------------------------------------    
+        \vspace{-2mm}
+        \profilesection{Interests}{3cm} 
+        
+        \interests
   \end{textblock}
 }
 
