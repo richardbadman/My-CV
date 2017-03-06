@@ -60,6 +60,7 @@
 \definecolor{maingray}{HTML}{B9B9B9}
 
 \definecolor{pblue}{HTML}{0395DE}
+\definecolor{yas}{HTML}{E8125E}
 
 \definecolor{darkgray}{HTML}{333333}
 \definecolor{gray}{HTML}{4D4D4D}
@@ -143,17 +144,21 @@
 \newcommand*\icon[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=1pt, fill=mainblue,mainblue,text=white] (char) {#1};}}
 
 % Command for printing skill progress bars
-\newcommand\interests[1]{ 
-	\renewcommand{\interests}{
-		\begin{tikzpicture}
-			\foreach [count=\i] \x/\y in {#1}{
-				\draw[fill=maingray,maingray] (0,\i) rectangle (6,\i+0.4);
-				\draw[fill=white,mainblue](0,\i) rectangle (\y,\i+0.4);
-				\node [above right] at (0,\i+0.4) {\x};
-			}
-		\end{tikzpicture}
+%\newcommand\interests[1]{ 
+%	\renewcommand{\interests}{
+%		\begin{tikzpicture}
+%			\foreach [count=\i] \x/\y in {#1}{
+%				\draw[fill=maingray,maingray] (0,\i) rectangle (6,\i+0.4);
+%				\draw[fill=white,mainblue](0,\i) rectangle (\y,\i+0.4);
+%				\node [above right] at (0,\i+0.4) {\x};
+%			}
+%		\end{tikzpicture}
+%	}
+%}
+
+\newcommand\interests{1}{
+	\renewcommand\interests[1]{
 	}
-}
 
 %----------------------------------------------------------------------------------------
 %  SIDEBAR LAYOUT
@@ -171,11 +176,11 @@
     %------------------------------------------------
     
         \vspace{4mm}
-    {\huge\color{pblue}\cvname}
+    {\huge\color{yas}\cvname}
 
     %------------------------------------------------
     
-    {\large\color{black!80}\cvjobtitle}
+    {\normalsize\color{black!80}\cvjobtitle}
 
     %------------------------------------------------
     
@@ -201,7 +206,7 @@
       \ifthenelse{\equal{\href{\cvsite}{\cvsite}}{}}{}{
             {$
               \begin{array}{l}
-              {\href{\cvsite}{\includegraphics[scale=0.05]{img/globe-512.png}}}
+              {\href{\cvsite}{\includegraphics[scale=0.125]{img/globe-512.png}}}
               \end{array}
               $} & \href{\cvsite}{www.onegoodman.co.uk} \\
               }
@@ -209,7 +214,7 @@
       \ifthenelse{\equal{\cvmail}{}}{}{
             {$
               \begin{array}{l}
-              {\href{mailto:\cvmail}{\includegraphics[scale=0.05]{img/email.png}}}
+\hspace{-.05cm}              {\href{mailto:\cvmail}{\includegraphics[scale=0.02]{img/email.png}}}
               \end{array}
               $} 
             & \href{mailto:\cvmail}{\cvmail}
@@ -238,8 +243,45 @@
         %------------------------------------------------    
         \vspace{-2mm}
         \profilesection{Hobbies}{3cm} 
+
+			\vspace{.5cm}
+	        \hspace{-2.5mm}
+		    \renewcommand{\arraystretch}{1.6}
+		    \begin{tabular}{p{1cm} @{\hskip 0.5cm}p{5cm}}
+		    
+		    \ifthenelse{\equal{\cvnumberphone}{}}{}{
+            {$
+              %\begin{array}{l}
+              \includegraphics[scale=1.3]{img/music.png}
+             % \end{array}
+              $} 
+%			&{Test}           
+            & \vspace{-1cm}\footnotesize{I'm a trained classical musician, obtaining a diploma in the Flute and working towards a grade 8 in piano. I'm also in a flute trio where we often perform concerts.} \\
+           }
+      \ifthenelse{\equal{\href{\cvsite}{\cvsite}}{}}{}{
+            {$
+              \vspace*{.4cm}
+             % \begin{array}{l}
+              {\includegraphics[scale=0.1]{img/sewing.png}}
+             % \end{array}
+              $} & \vspace{-.6cm}\footnotesize{In my spare time I often sew, I often make my own clothes and accessories such as backpacks. I find it a therapeutic hobby, and enjoy exploring my creativity.} \\
+              
+              }
+            %& \cvsite\\}
+      \ifthenelse{\equal{\cvmail}{}}{}{
+            {$
+            \vspace{.2cm}
+             % \begin{array}{l}
+              {\includegraphics[scale=0.03]{img/yoga.png}}
+             % \end{array}
+              $} 
+%              & {Test}
+            & \vspace{-.6cm}\footnotesize{To balance my life, I find doing yoga an activity I enjoy as well as the health benefits it provides.}
+            }
+    \end{tabular}
+
         
-        \interests
+%        \interests
   \end{textblock}
 }
 
@@ -255,7 +297,7 @@
 
 \def\@sectioncolor#1#2#3{%
 	{%
-		\color{pblue} #1#2#3%
+		\color{yas} #1#2#3%
 	}%
 }
 
