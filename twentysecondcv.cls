@@ -237,7 +237,7 @@
         
         %------------------------------------------------    
         \vspace{-2mm}
-        \profilesection{Interests}{3cm} 
+        \profilesection{Hobbies}{3cm} 
         
         \interests
   \end{textblock}
